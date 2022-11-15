@@ -22,9 +22,9 @@ public class AuthorService {
     public Author createAuthor(Author author){
         return authorRepo.save(author);
     }
-    public Iterable<Author> searchForAuthorByName(String search){
-        return authorRepo.searchForAuthorByName(search);
-    }
+//    public Iterable<Author> searchForAuthorByName(String search){
+//        return authorRepo.searchForAuthorByName(search);
+//    }
 
 
 

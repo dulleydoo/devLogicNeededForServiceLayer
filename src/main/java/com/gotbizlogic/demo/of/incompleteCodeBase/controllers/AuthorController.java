@@ -26,7 +26,7 @@ public class AuthorController {
     public ResponseEntity<Iterable<Author>> getAllAuthors(@RequestParam(required = false) String name){
         return new ResponseEntity<>(authorService.getAllAuthors(name), HttpStatus.OK);
     }
-
+    
 
 
 

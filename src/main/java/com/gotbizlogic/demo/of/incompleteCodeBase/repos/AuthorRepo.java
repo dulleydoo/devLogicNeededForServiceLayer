@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AuthorRepo extends CrudRepository<Author, Long> {
-
-    @Query(value = "select * from author WHERE name LIKE CONCAT ('%', :query, '%')" , nativeQuery = true)
-    Iterable<Author> searchForAuthorByName(String query);
-
+    
+//    @Query(value = "select * from author WHERE name LIKE CONCAT ('%', :query, '%')" , nativeQuery = true)
+//    Iterable<Author> searchForAuthorByName(String query);
+    
     Iterable<Author> findByNameContaining(String name);
 }
